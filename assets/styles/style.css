@@ -18,10 +18,6 @@ body > header {
     padding: 16px 64px;
 }
 
-aside {
-    flex: 1;
-}
-
 nav ul {
     display: flex;
     gap: 24px;
@@ -43,15 +39,44 @@ nav a:hover {
     font-weight: bold;
 }
 
+main {
+    padding: 32px 64px;
+    display: flex;
+    gap: 32px;
+}
+
+aside {
+    flex: 1;
+}
+
+footer {
+    background-color: #3E3636;
+    text-align: center;
+    padding: 8px 64px;
+    color: white;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p #caption {
+    font-size: 8px;
+}
+
+#content {
+    flex: 3 1;
+}
+
 .logo {
     color: #F5EDED;
     font-size: 24px;
     font-weight: bold;
-}
-
-main {
-    padding: 32px 64px;
-    display: flex;
 }
 
 .featured-image {
@@ -72,37 +97,14 @@ main {
     text-align: center;
 }
 
-#content {
-    flex: 3 1;
-}
-
-h1 {
-    font-size: 42px;
-    margin: 0;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-p #caption {
-    font-size: 8px;
-}
-
 .profile h2 {
     margin-top: 0;
-}
-
-footer {
-    background-color: #3E3636;
-    text-align: center;
-    padding: 8px 64px;
-    color: white;
 }
 
 @media screen and (max-width: 1000px) {
     main {
         flex-direction: column;
+        gap: 0;
     }
 
     main aside {
@@ -135,4 +137,4 @@ footer {
         align-self: stretch;
     }
 
-  }
+}
